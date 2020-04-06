@@ -10,9 +10,10 @@ module.exports = {
       .set('@', resolve('src'))
       .set('_c', resolve('src/components'))
   },
+  productionSourceMap: false,
   // 打包时不生成.map文件，减少打包体积，加快打包速度
   devServer: {
-    proxy: 'http://localhost:4000'
+    proxy: 'http://localhost:3000'
   }
 
 }
